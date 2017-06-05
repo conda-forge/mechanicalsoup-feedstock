@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: mechanicalsoup
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: mechanicalSoup-{{ version }}.tar.gz
-  url: https://github.com/hickford/MechanicalSoup/archive/v{{ version }}.tar.gz
-  sha256: 8d7b00a8a56b2b527d5a338bb0b2ba74044d29fd3b84a6f3aa8521e208d4c850
+  url: https://pypi.io/packages/source/M/MechanicalSoup/MechanicalSoup-{{ version }}.tar.gz
+  sha256: 0d1523f8e14957d0cce1dae048ff35c4aabb4a2cbfd8014cbfd110426b1e0972
 
 build:
   number: 0
