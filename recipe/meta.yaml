@@ -1,22 +1,23 @@
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: mechanicalsoup
   version: {{ version }}
 
 source:
-  fn: mechanicalSoup-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/M/MechanicalSoup/MechanicalSoup-{{ version }}.tar.gz
-  sha256: 0d1523f8e14957d0cce1dae048ff35c4aabb4a2cbfd8014cbfd110426b1e0972
+  sha256: 38a6ca35428196be94f87f8f036ee4a88b1418d1f77e5634ad92acfaa22c28da
 
 build:
   number: 0
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
     - python
     - setuptools
+    - pytest-runner
   run:
     - python
     - requests >=2.0
