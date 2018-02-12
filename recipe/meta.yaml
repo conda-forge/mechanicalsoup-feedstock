@@ -1,4 +1,4 @@
-{% set version = "0.9.0.post4" %}
+{% set version = "0.10.0" %}
 
 package:
   name: mechanicalsoup
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/M/MechanicalSoup/MechanicalSoup-{{ version }}.tar.gz
-  sha256: ce8f822afbc9bef1499be417e8d5deecd0cd32606420165700e89477955f03ab
+  sha256: 22423efd025c3eedb06f41d3ff1127174a59f40dc560e82dce143956976195bf
 
 build:
   number: 0
