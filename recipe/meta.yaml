@@ -1,4 +1,4 @@
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: mechanicalsoup
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/M/MechanicalSoup/MechanicalSoup-{{ version }}.tar.gz
-  sha256: 2712ec0f3087cbc719c6c3dfb317a05800ff14fcdbfa67a2f9f6e07226e7a94c
+  sha256: 39a60627a97981869251837b8bd082485f2f681df8a3315836ffaa74663627bd
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -20,8 +20,9 @@ requirements:
     - pytest-runner
   run:
     - python
+    - beautifulsoup4 >=4.4
+    - lxml
     - requests >=2.0
-    - beautifulsoup4
     - six >=1.4
 
 test:
