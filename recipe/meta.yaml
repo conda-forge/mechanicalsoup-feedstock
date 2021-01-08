@@ -15,11 +15,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
     - pytest-runner
   run:
-    - python
+    - python >=3.5
     - beautifulsoup4 >=4.4
     - lxml
     - requests >=2.0
@@ -28,6 +28,10 @@ requirements:
 test:
   imports:
     - mechanicalsoup
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/hickford/MechanicalSoup
