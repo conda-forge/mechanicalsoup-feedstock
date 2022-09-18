@@ -15,15 +15,14 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
     - pytest-runner
   run:
-    - python >=3.5
-    - beautifulsoup4 >=4.4
+    - python >=3.6
+    - beautifulsoup4 >=4.7
     - lxml
-    - requests >=2.0
-    - six >=1.4
+    - requests >=2.22
 
 test:
   imports:
