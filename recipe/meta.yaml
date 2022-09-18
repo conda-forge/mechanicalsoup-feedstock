@@ -34,7 +34,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/hickford/MechanicalSoup
+  home: https://github.com/MechanicalSoup/MechanicalSoup
   license: MIT
   license_file: LICENSE
   summary: A Python library for automating interaction with websites

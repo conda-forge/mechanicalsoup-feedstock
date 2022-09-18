@@ -1,7 +1,7 @@
 About mechanicalsoup
 ====================
 
-Home: https://github.com/hickford/MechanicalSoup
+Home: https://github.com/MechanicalSoup/MechanicalSoup
 
 Package license: MIT
 
