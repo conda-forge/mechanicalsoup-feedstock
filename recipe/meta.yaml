@@ -1,29 +1,29 @@
+{% set name = "mechanicalsoup" %}
 {% set version = "1.2.0" %}
 
 package:
-  name: mechanicalsoup
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/M/MechanicalSoup/MechanicalSoup-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/MechanicalSoup-{{ version }}.tar.gz
   sha256: f8593ab4474a82ceb6b7ddb3e35a8c69f8455a06adafd2b5258c1d852158d760
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
-    - pytest-runner
   run:
-    - python >=3.5
-    - beautifulsoup4 >=4.4
+    - python >=3.6
+    - requests >=2.22.0
+    - beautifulsoup4 >=4.7
     - lxml
-    - requests >=2.0
-    - six >=1.4
+
 
 test:
   imports:
