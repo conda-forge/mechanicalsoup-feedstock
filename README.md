@@ -1,11 +1,11 @@
-About mechanicalsoup
-====================
+About mechanicalsoup-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mechanicalsoup-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/MechanicalSoup/MechanicalSoup
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mechanicalsoup-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python library for automating interaction with websites
 
