@@ -1,18 +1,18 @@
 {% set name = "mechanicalsoup" %}
-{% set version = "1.2.0" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/MechanicalSoup-{{ version }}.tar.gz
-  sha256: f8593ab4474a82ceb6b7ddb3e35a8c69f8455a06adafd2b5258c1d852158d760
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: dce8a797635a748c4724471b5ebee5b1be42531a8464ed4a955e9a46cf612a4c
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
